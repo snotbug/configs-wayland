@@ -13,30 +13,20 @@ tooltip {
     border-radius: 0;
 }
 
-.modules-left {
-}
-
 .modules-center {
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.modules-right {
-}
-
 #workspaces button {
-    border: none;
-    border-radius: 0px;
     color: white;
     background: black;
+    border: none;
+    border-radius: 0px;
 }
 
 #workspaces button.active {
     color: red;
-}
-
-#workspaces button.persistent {
-    color: gray;
 }
 
 #workspaces button:hover {
@@ -44,59 +34,18 @@ tooltip {
     transition: none;
 }
 
-#clock,
-#tray,
-#pulseaudio,
-#wireplumber,
 #battery,
 #backlight,
-#network {
+#clock,
+#network,
+#pulseaudio,
+#tray,
+#wireplumber {
     padding: 0 10px;
     color: white;
     background: black;
 }
 
-#clock {
-}
-
-#tray {
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-}
-
-#pulseaudio {
-}
-
-#pulseaudio.muted {
-}
-
-#wireplumber {
-}
-
-#wireplumber.muted {
-}
-
-#battery {
-}
-
-#battery.charging, #battery.plugged {
-}
-
 #battery.critical:not(.charging) {
     color: red;
-}
-
-#backlight {
-}
-
-#network {
-}
-
-#network.disconnected {
 }

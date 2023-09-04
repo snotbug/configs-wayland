@@ -15,7 +15,7 @@ interface/theme/draw_extra_borders = true
 interface/theme/corner_radius = 0
 interface/scene_tabs/display_close_button = 0
 interface/scene_tabs/show_thumbnail_on_hover = false
-filesystem/directories/default_project_path = ""
+filesystem/directories/default_project_path = "/home/arrival/Desktop/development"
 filesystem/file_dialog/show_hidden_files = true
 filesystem/file_dialog/display_mode = 1
 text_editor/theme/highlighting/symbol_color = Color(0.67, 0.79, 1, 1)
@@ -102,14 +102,14 @@ editors/3d/navigation/show_viewport_rotation_gizmo = true
 editors/3d/navigation/show_viewport_navigation_gizmo = false
 text_editor/behavior/files/auto_reload_and_parse_scripts_on_save = true
 text_editor/behavior/files/open_dominant_script_on_scene_change = true
-text_editor/external/use_external_editor = false
-text_editor/external/exec_path = ""
+text_editor/external/use_external_editor = true
+text_editor/external/exec_path = "/usr/bin/kitty"
 text_editor/script_list/script_temperature_enabled = true
 text_editor/script_list/script_temperature_history_size = 15
 text_editor/script_list/group_help_pages = true
 text_editor/script_list/sort_scripts_by = 0
 text_editor/script_list/list_script_names_as = 0
-text_editor/external/exec_flags = "{file}"
+text_editor/external/exec_flags = "nvim {file}"
 version_control/username = ""
 version_control/ssh_public_key_path = ""
 version_control/ssh_private_key_path = ""
@@ -162,11 +162,12 @@ text_editor/theme/highlighting/gdscript/node_reference_color = Color(0.39, 0.76,
 text_editor/theme/highlighting/gdscript/annotation_color = Color(1, 0.7, 0.45, 1)
 text_editor/theme/highlighting/gdscript/string_name_color = Color(1, 0.76, 0.65, 1)
 text_editor/help/sort_functions_alphabetically = true
-network/language_server/use_external_editor = false
+network/language_server/use_external_editor = true
 shortcuts = [{
 "name": "editor/close_scene",
 "shortcuts": [SubResource("InputEventKey_pu3h7")]
 }]
 metadata/script_setup_templates_dictionary = {
-"Node": "0NodeDefault"
+"Node": "0NodeDefault",
+"Sprite2D": "0NodeDefault"
 }

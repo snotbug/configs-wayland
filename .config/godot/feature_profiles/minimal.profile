@@ -7,9 +7,7 @@
 	"disabled_editors": [],
 	"disabled_features": [
 		"3d",
-		"script",
-		"asset_lib",
-		"history_dock"
+		"asset_lib"
 	],
 	"disabled_properties": [],
 	"type": "feature_profile"
