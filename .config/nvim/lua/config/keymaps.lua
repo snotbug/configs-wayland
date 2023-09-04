@@ -35,7 +35,7 @@ keymap("n", "<S-l>", ":bnext<cr>", opts)
 keymap("n", "<S-h>", ":bprevious<cr>", opts)
 
 -- delete buffer
-keymap("n", "<S-w>", "<cmd>bprevious<bar>bdelete#<cr>", opts)
+keymap("n", "<leader>w", "<cmd>bprevious<bar>bdelete#<cr>", opts)
 
 -- lsp
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{async = true}<cr>", opts)

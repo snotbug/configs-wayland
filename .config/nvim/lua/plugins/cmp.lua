@@ -5,9 +5,6 @@ return
     {
         {"hrsh7th/cmp-nvim-lsp",},
         {"hrsh7th/cmp-path",},
-        {"hrsh7th/cmp-buffer",},
-        --{"hrsh7th/cmp-cmdline",},
-        --{"hrsh7th/cmp-nvim-lua",},
     },
     config = function()
         local cmp = require("cmp")
@@ -23,26 +20,15 @@ return
             {
                 {name = "nvim_lsp"},
                 {name = "path"},
-                {name = "buffer"},
-                --{name = "nvim_lua"},
             },
             formatting =
             {
                 fields =
                 {
+                    "kind",
                     "abbr",
                     "menu"
                 },
-                format = function(entry, vim_item)
-                    vim_item.menu = (
-                    {
-                        nvim_lsp = "",
-                        path = "",
-                        buffer = "",
-                        --nvim_lua = "",
-                    })[entry.source.name]
-                    return vim_item
-                end,
             },
         }
     end
