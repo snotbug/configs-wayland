@@ -5,10 +5,10 @@
     "height": 30,
     "width": 1920,
     "spacing": 5,
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["tray", "clock"],
     "modules-right": ["wireplumber", "battery", "backlight", "network"],
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "active-only": false,
