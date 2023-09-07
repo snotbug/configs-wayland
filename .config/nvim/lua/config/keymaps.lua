@@ -1,9 +1,9 @@
+local keymap = vim.api.nvim_set_keymap
 local opts =
 {
     noremap = true,
     silent = true
 }
-local keymap = vim.api.nvim_set_keymap
 
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
@@ -31,14 +31,11 @@ keymap("n", "<A-k>", "<C-w>k", opts)
 keymap("n", "<A-l>", "<C-w>l", opts)
 
 -- navigate between buffers
-keymap("n", "<S-l>", ":bnext<cr>", opts)
-keymap("n", "<S-h>", ":bprevious<cr>", opts)
+keymap("n", "<C-l>", ":bnext<cr>", opts)
+keymap("n", "<C-h>", ":bprevious<cr>", opts)
 
 -- delete buffer
-keymap("n", "<leader>w", "<cmd>bprevious<bar>bdelete#<cr>", opts)
-
--- lsp
-keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{async = true}<cr>", opts)
+keymap("n", "<C-w>", "<cmd>bdelete<cr>", opts)
 
 -- move selected text vertically
 keymap("v", "<S-j>", ":move '>+1<cr>gv-gv", opts)

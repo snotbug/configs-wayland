@@ -7,6 +7,8 @@ return
         {
             ensure_installed =
             {
+                "python",
+                "gdscript",
             },
             ignore_install =
             {
